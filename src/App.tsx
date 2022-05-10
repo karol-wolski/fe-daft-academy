@@ -1,8 +1,9 @@
-import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 
 function App() {
+  const handleShowAlert = () => alert('Hello React')
+  
   return (
     <div className="App">
       <header className="App-header">
@@ -18,6 +19,7 @@ function App() {
         >
           Learn React
         </a>
+        <button onClick={handleShowAlert}>Show alert</button>
       </header>
     </div>
   );
