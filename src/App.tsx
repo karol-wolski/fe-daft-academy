@@ -20,6 +20,13 @@ function App() {
           Learn React
         </a>
         <button onClick={handleShowAlert}>Show alert</button>
+        <a
+            className="App-link"
+            href="https://github.com/karol-wolski/fe-daft-academy"
+            target="_blank" rel="noreferrer"
+        >
+          Go to repo
+        </a>
       </header>
     </div>
   );
