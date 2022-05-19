@@ -1,33 +1,17 @@
-import logo from './logo.svg';
 import './App.css';
+import Form from './components/Form/Form';
 
 function App() {
-  const handleShowAlert = () => alert('Hello React')
-  
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
+      <Form />
+      <a
           className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-        <button onClick={handleShowAlert}>Show alert</button>
-        <a
-            className="App-link"
-            href="https://github.com/karol-wolski/fe-daft-academy"
-            target="_blank" rel="noreferrer"
-        >
-          Go to repo
-        </a>
-      </header>
+          href="https://github.com/karol-wolski/fe-daft-academy"
+          target="_blank" rel="noreferrer"
+      >
+        Go to repo
+      </a>
     </div>
   );
 }
