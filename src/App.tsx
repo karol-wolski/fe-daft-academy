@@ -1,18 +1,24 @@
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import './App.css';
-import Form from './components/Form/Form';
+import Footer from './components/Footer/Footer';
+import Header from './components/Header/Header';
+import Week2 from './pages/Week2/Week2';
 
 function App() {
   return (
-    <div className="App">
-      <Form />
-      <a
-          className="App-link"
-          href="https://github.com/karol-wolski/fe-daft-academy"
-          target="_blank" rel="noreferrer"
-      >
-        Go to repo
-      </a>
-    </div>
+    <>
+      <BrowserRouter>
+      <Header />
+      <section className="container">
+        <Routes>
+          <Route path='/' element={<Week2 />}/>
+          <Route path='/week-2' element={<Week2 />}/>
+        </Routes>
+      </section>
+      <Footer />
+      </BrowserRouter>
+
+    </>
   );
 }
 

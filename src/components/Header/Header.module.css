@@ -1,0 +1,16 @@
+.header {
+  background-color: var(--black);
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 120rem;
+  padding: 1.5rem;
+  margin: 0 auto;
+}
+
+.header__logo {
+  width: 4rem;
+}
