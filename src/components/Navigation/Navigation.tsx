@@ -22,6 +22,9 @@ const Navigation = () => {
         `${styles.navigation__list} ${styles['navigation__list--open']}` : 
         styles.navigation__list}>
         <li className={styles.navigation__item}>
+          <Link to="/about" className={styles.navigation__link}>About</Link>
+        </li>
+        <li className={styles.navigation__item}>
           <Link to="/week-2" className={styles.navigation__link}>Week 2</Link>
         </li>
       </ul>
