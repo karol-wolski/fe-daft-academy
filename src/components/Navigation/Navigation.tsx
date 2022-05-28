@@ -25,6 +25,9 @@ const Navigation = () => {
           <Link to="/about" className={styles.navigation__link}>About</Link>
         </li>
         <li className={styles.navigation__item}>
+          <Link to="/contact" className={styles.navigation__link}>Contact</Link>
+        </li>
+        <li className={styles.navigation__item}>
           <Link to="/week-2" className={styles.navigation__link}>Week 2</Link>
         </li>
       </ul>

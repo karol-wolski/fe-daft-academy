@@ -4,3 +4,8 @@
   margin: 0 auto;
   min-height: calc(100vh - 7rem - 5rem);
 }
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}

@@ -1,0 +1,46 @@
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.list {
+  list-style: none;
+}
+
+.list__item {
+  margin: 3rem 0;
+}
+
+.list__link {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: var(--black);
+}
+
+.list__logo {
+  margin-right: 1.5rem;
+  width: 2.5rem;
+}
+
+.image {
+  max-width: 30rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    flex-direction: row;
+  }
+
+  .image {
+    max-width: 40rem;
+  }
+}
