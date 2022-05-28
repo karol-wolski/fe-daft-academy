@@ -4,6 +4,7 @@ import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
+import Homepage from './pages/Homepage/Homepage';
 import Week2 from './pages/Week2/Week2';
 
 function App() {
@@ -13,7 +14,7 @@ function App() {
       <Header />
       <section className="container">
         <Routes>
-          <Route path='/' element={<Week2 />}/>
+          <Route path='/' element={<Homepage />}/>
           <Route path='/about' element={<About />}/>
           <Route path='/contact' element={<Contact />}/>
           <Route path='/week-2' element={<Week2 />}/>

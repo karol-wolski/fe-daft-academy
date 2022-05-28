@@ -1,0 +1,19 @@
+.title {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.desc {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.containerLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  background-color: var(--black);
+  max-width: 15rem;
+}
