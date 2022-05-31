@@ -1,0 +1,14 @@
+.desc {
+  font-size: 1.4rem;
+  margin-bottom: 3rem;
+}
+
+.containerLogo {
+  display: flex;
+  justify-content: center;
+}
+
+.logo {
+  background-color: var(--black);
+  max-width: 15rem;
+}

@@ -1,0 +1,9 @@
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.link {
+  font-weight: 700;
+  color: var(--black);
+  text-decoration: none;
+}
