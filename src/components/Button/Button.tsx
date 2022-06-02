@@ -1,6 +1,6 @@
 import styles from './Button.module.css'
 interface IButton {
-  isDisabled: boolean
+  isDisabled?: boolean
   children: React.ReactNode
   onClick: (e: any) => void
 }

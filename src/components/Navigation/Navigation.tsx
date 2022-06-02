@@ -57,6 +57,14 @@ const Navigation = () => {
               Week 2
           </Link>
         </li>
+        <li className={styles.navigation__item}>
+          <Link 
+            to="/ram" 
+            className={styles.navigation__link}
+            onClick={closeMobileMenu}>
+              Rick & Morty
+          </Link>
+        </li>
       </ul>
     </nav>
   )

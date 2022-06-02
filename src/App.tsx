@@ -5,6 +5,7 @@ import Header from './components/Header/Header';
 import About from './pages/About/About';
 import Contact from './pages/Contact/Contact';
 import Homepage from './pages/Homepage/Homepage';
+import RickAndMorty from './pages/RickAndMorty/RickAndMorty';
 import Week2 from './pages/Week2/Week2';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
           <Route path='/about' element={<About />}/>
           <Route path='/contact' element={<Contact />}/>
           <Route path='/week-2' element={<Week2 />}/>
+          <Route path='/ram' element={<RickAndMorty />}/>
         </Routes>
       </section>
       <Footer />
