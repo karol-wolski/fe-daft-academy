@@ -1,22 +1,7 @@
 import { useCallback, useEffect, useState } from "react";
 
-interface Iapi {
-  created: string;
-  episode: string[];
-  gender: string;
-  id: number;
-  image: string;
-  location: { name: string; url: string };
-  name: string;
-  origin: { name: string; url: string };
-  species: string;
-  status: string;
-  type: string;
-  url: string;
-}
-
 function useFetch(url: string) {
-  const [data, setData] = useState<Iapi>();
+  const [data, setData] = useState<any>();
   const [loading, setLoading] = useState<boolean>(false);
   const [error, setError] = useState<null | string>(null);
 
@@ -41,7 +26,9 @@ function useFetch(url: string) {
     getData();
   }, [getData]);
 
-  return { data, loading, error };
+  const refetch = () => getData();
+
+  return { data, loading, error, refetch };
 }
 
 export default useFetch;

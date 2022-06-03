@@ -65,6 +65,14 @@ const Navigation = () => {
               Rick & Morty
           </Link>
         </li>
+        <li className={styles.navigation__item}>
+          <Link 
+            to="/airtable" 
+            className={styles.navigation__link}
+            onClick={closeMobileMenu}>
+              AirTable
+          </Link>
+        </li>
       </ul>
     </nav>
   )

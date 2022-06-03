@@ -3,10 +3,10 @@ import './App.css';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import About from './pages/About/About';
+import AirTable from './pages/AirTable/AirTable';
 import Contact from './pages/Contact/Contact';
 import Homepage from './pages/Homepage/Homepage';
 import RickAndMorty from './pages/RickAndMorty/RickAndMorty';
-import Week2 from './pages/Week2/Week2';
 
 function App() {
   return (
@@ -18,8 +18,8 @@ function App() {
           <Route path='/' element={<Homepage />}/>
           <Route path='/about' element={<About />}/>
           <Route path='/contact' element={<Contact />}/>
-          <Route path='/week-2' element={<Week2 />}/>
           <Route path='/ram' element={<RickAndMorty />}/>
+          <Route path='/airtable' element={<AirTable />}/>
         </Routes>
       </section>
       <Footer />

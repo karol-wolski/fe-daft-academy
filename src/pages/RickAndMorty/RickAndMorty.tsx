@@ -22,8 +22,8 @@ const RickAndMorty = () => {
         {error && <ErrorMessage>{error}</ErrorMessage>}
         {data && (
           <>
-            <img src={data.image} alt={data.name} className={styles.img} />
-            <span className={styles.name}>{data.name}</span>
+            <img src={data?.image} alt={data?.name} className={styles.img} />
+            <span className={styles.name}>{data?.name}</span>
             <Button onClick={handleBtnOnClick}>
               Generate random characters
             </Button>
