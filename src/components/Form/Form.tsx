@@ -1,20 +1,18 @@
 import { ChangeEvent, useEffect, useState } from "react"
+import { LS_INPUT_KEY } from "../../pages/AirTable/AirTable";
 import Button from "../Button/Button"
 import ErrorMessage from "../ErrorMessage/ErrorMessage"
 import Input from "../Input/Input"
 import styles from './Form.module.css'
 
-const LS_INPUT_KEY = 'inputValue'
+interface IForm {
+  handleSubmit: (e: Event, name: string) => void;
+}
 
-const Form = () => {
+const Form = ({ handleSubmit }: IForm) => {
   const [inputValue, setInputValue] = useState<string>('')
   const [isDisabled, setIsDisabled] = useState<boolean>(true)
   const [errorMessage, setErrorMessage] = useState<string>('')
-
-  const handleSubmitButtonClick = (e: Event) => {
-    e.preventDefault()
-    localStorage.setItem(LS_INPUT_KEY, inputValue)
-  }
 
   useEffect(() => {
     const getDataFromLS = localStorage.getItem(LS_INPUT_KEY)
@@ -53,7 +51,7 @@ const Form = () => {
       <form className={styles.form}>
         <label className={styles.label} htmlFor="textInput">Write your name below</label>
         <Input id="textInput" value={inputValue} onChange={(e) => handleOnChange(e)} />
-        <Button isDisabled={isDisabled} onClick={(e) => handleSubmitButtonClick(e)}>Save</Button>
+        <Button isDisabled={isDisabled} onClick={(e) => handleSubmit(e, inputValue)}>Save</Button>
         {
           errorMessage && <ErrorMessage>{errorMessage}</ErrorMessage>
         }

@@ -1,0 +1,16 @@
+.loading-background {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--blackA70);
+}
+
+.loading-icon {
+  width: 8rem;
+  height: 8rem;
+  color: var(--white);
+}
